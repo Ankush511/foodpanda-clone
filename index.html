@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato-Landing-Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Nav Bar -->
+    <header>
+      <nav class="navbar">
+        <div class="navbar__brand">
+        <a href="http://127.0.0.1:5500/index.html">
+          <img src="./assets/logo.png" alt="logo" class="brand__logo" />
+        </a>
+        </div>
+        <div class="navbar__nav__items">
+          
+        </div>
+        <ul class="menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Cities</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="nav__item">
+            <button class="button__primary hide__mobile">Sign Up</button>
+            <button
+              class="button__primary hamburger__menu mobile__only"
+              id="hamburgermenu"
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+            </button>
+            
+          </div>
+
+      </nav>
+      <div class="mobile__navbar__items mobile__only hamburger__menu__close">
+          
+        <ul>
+          <li class="nav__item">Products</li>
+          <li class="nav__item">Restaurants</li>
+          <li class="nav__item">Pricing</li>
+          <li class="nav__item">About Us</li>
+        </ul>
+
+        <div class="nav__item">
+          <button class="button__primary">Order Food</button>
+        </div>
+      </div>
+    </header>
+    <!--Hero Section-->
+    <main class="container">
+      <section class="hero__container">
+        <div class="hero__image__container">
+          <img src="./assets/hero image.jpeg" alt="hero image" class="hero__image" />
+          <img
+            src="./assets/heroShape.svg"
+            alt="hero image shape"
+            class="hero__image__shape"
+          />
+          <img
+            src="./assets/herobgpattren.svg"
+            alt="hero image shape"
+            class="hero__image__pattren"
+          />
+        </div>
+        <div class="hero__description">
+          <h1 class="hero__text">
+            You can't download food but you can order from Food Panda.
+          </h1>
+          <button class="button__primary">Order Now</button>
+        </div>
+      </section>
+      <!--Video Container-->
+      <section class="video__footage__container">
+        <div class="video__footage">
+          <iframe
+            src="./assets/advertise.mp4"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            class="chef__video"
+          ></iframe>
+        </div>
+        <div class="video__footage__text">
+          <p>
+            Can't Cook, don't bother order food online from Food Panda. <br/>
+            Best cooks and best delivery guys, all at your service. <br/>
+            Awaiting your call for food!
+          </p>
+        </div>
+      </section>
+      <!--Explore Food Menu-->
+      <section class="food__list__container">
+        <h1 class="text-xl">Explore our menu</h1>
+        <div class="food__list__container__diagonal"></div>
+        <div class="food__menu__card__list">
+            <!--Burger-->
+            
+          <div class="food__menu__card">
+              <a href="#">
+            <img
+              src="./assets/burger.jpg"
+              alt="burger"
+              class="food__menu__card__image"
+            />
+            <div class="food__menu__card__details">
+              <h4 class="text-lg"><strong>Burgers</strong></h4>
+              <p>
+                Mcdonalds, Burger King, Burger Farm
+                <span style="color: red">+3</span>
+              </p>
+            </div>
+            </a>
+          </div>
+          
+          <!--Pizza-->
+          <div class="food__menu__card food__menu__card__move__up">
+              <a href="#">
+            <img
+              src="./assets/pizza.jpg"
+              alt="pizza"
+              class="food__menu__card__image"
+            />
+            <div class="food__menu__card__details">
+              <h4 class="text-lg"><strong>Pizza</strong></h4>
+              <p>
+                Domino's Pizza, Pizza Hut, Papa John's
+                <span style="color: red">+3</span>
+              </p>
+            </div>
+            </a>
+          </div>
+          <!--Ice Cream-->
+          <div class="food__menu__card">
+              <a href="#">
+            <img
+              src="./assets/icecream.jpg"
+              alt="iceCream"
+              class="food__menu__card__image"/>  
+            <div class="food__menu__card__details">
+              <h4 class="text-lg"><strong>Ice Creams</strong></h4>
+              <p>
+                Ibaco, Baskin Robins, Giani
+                <span style="color: red">+3</span>
+              </p>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="food__list__view__more">View More</div>
+      </section>
+      <!--Grid View Restaurant-->
+      <section class="restaurant__list__container">
+        <div class="restaurant__list__text">
+          <h4 class="text-xl">Convenience without compromise.</h4>
+        </div>
+        <div class="restaurant__list__images__container">
+          <div class="restaurant__list__row_1">
+            <div>
+              <img
+                src="./assets/gridimage2.jpg"
+                alt="restaurant1"
+                class="restaurant1"
+              />
+            </div>
+            <img
+              src="./assets/gridimage1.jpg"
+              alt="restaurant2"
+              class="restaurant2"
+            />
+          </div>
+          <div class="restaurant__list__row_2">
+            <img
+              src="./assets/gridimage4.jpg"
+              alt="restaurant3"
+              class="restaurant3"
+            />
+            <img
+              src="./assets/gridimage3.jpg"
+              alt="restaurant4"
+              class="restaurant4"
+            />
+          </div>
+        </div>
+      </section>
+      <!--Email-->
+      <section class="email__subcribe__container">
+        <div>
+          <h1 class="text-xl">Stay Updated</h1>
+          <div class="email__subcribe__input__field">
+            <div>
+              <input
+                type="email"
+                placeholder="enter_mail_id@email.com"
+                class="email__input"
+              />
+            </div>
+            <button class="button__primary">Get Updates</button>
+            <button class="button__survey">Survey Form</button>
+            
+          </div>
+        </div>
+      </section>
+      <!--Quote Container-->
+      <section class="quote__container">
+        
+      </section>
+    </main>
+    
+    
+    <!--Footer Section-->
+    <footer class="footanchor">
+      <img src="./assets/logo.png" alt="logo" />
+      <ul>
+        <li><a href="#">Terms & Condition</a></li>
+        <li><a href="#">Partnerships</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </footer> 
+    <script>
+      const hamburgermenu = document.getElementById("hamburgermenu");
+      const mobileNavDropDown = document.querySelector(
+        ".mobile__navbar__items"
+      );
+      window.addEventListener("click", () => {
+        if (mobileNavDropDown.classList.contains("hamburger__menu__close"))
+          return mobileNavDropDown.classList.remove("hamburger__menu__close");
+        return mobileNavDropDown.classList.add("hamburger__menu__close");
+      });
+    </script>
+  </body>
+</html>
