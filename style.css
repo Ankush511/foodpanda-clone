@@ -401,9 +401,8 @@
     center center ;
   }
   
-  
-  
   @media (min-width: 768px) {
+    
     .hide__mobile {
       display: block !important;
     }
@@ -446,9 +445,6 @@
       z-index: -3;
     }
     
-    
-    
-  
     .food__menu__card__list {
       display: flex;
       flex-wrap: wrap;
