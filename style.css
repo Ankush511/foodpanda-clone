@@ -340,7 +340,7 @@
   
   .email__input {
     border: 1px solid #ee89a0;
-    background-color: #fcedf0;
+    background-color: #e4ecb8;
     color: #1d3557;
     font-weight: 700;
     padding: 0.5rem;
@@ -349,7 +349,7 @@
   
   
   .email__input::placeholder {
-    color: #bdbcbc;
+    color: #686866;
   }
  
   .footanchor li a{
