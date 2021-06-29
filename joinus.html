@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.foodpanda.com/wp-content/uploads/2020/07/cropped-panda-head_pink-32x32.png" sizes="32x32" />
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="feedback.css" />
+    
+    <title>Join Us</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1 id="title" class="text-center" style="font-family: Oleo Script Swash Caps; font-weight:bold; color: black;
+          font-size: 6rem;">Join Us Now !</h1>
+            <p id="description" class="description text-center" style="font-family: cursive;
+          font-size: 1.6rem; color: black;">
+                Surround yourself with delicious food, not Negativity !!!
+            </p>
+        </header>
+
+        <!-- Full Name -->
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Full Name *</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name"
+                    required />
+            </div>
+
+            <!-- E-mail -->
+            <div class="form-group">
+                <label id="email-label" for="email">Email *</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label id="number-label" for="number">Phone Number *</label>
+                <input type="tel" name="Phone Number" id="number" class="form-control"
+                    placeholder="Enter your Phone Number" />
+            </div>
+            <!-- Position box -->
+            <div class="form-group">
+                <p>
+                  Which position would you like to apply for?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                  <option disabled selected value>Select an option</option>
+                  <option value="challenges">Delivery Boy</option>
+                  <option value="projects">Ambassador</option>
+                  <option value="community">Zonal Manager</option>
+                  <option value="openSource">FP Call Center</option>
+                  <option value="openSource">Quality Inspector</option>
+                </select>
+              </div>
+
+            <!-- Check Box -->
+            <div class="form-group">
+                <p>
+                    Are you above 18 years of age?
+                </p>
+
+                <label><input name="prefer" type="checkbox" class="input-checkbox" />Yes</label>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        <a href="index.html">
+                            Submit
+                        </a>
+                    </button>
+                </div>
+        </form>
+    </div>
+
+
+</body>
+
+
+</html>

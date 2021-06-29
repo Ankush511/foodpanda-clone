@@ -18,6 +18,7 @@
     display: block;
     width: calc(118% + 1.3px);
     height: 263px;
+    z-index: -3;
 }
 
 .custom-shape-divider-top-1624884627 .shape-fill {

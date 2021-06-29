@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.foodpanda.com/wp-content/uploads/2020/07/cropped-panda-head_pink-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" href="feedback.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1 id="title" class="text-center" style="font-family: Dancing Script; font-weight:bold; color: black;
+          font-size: 6rem;">Sign Up</h1>
+            <p id="description" class="description text-center" style="font-family: cursive;
+          font-size: 1.6rem; color: black;">
+                Surround yourself with delicious food, not Negativity !!!
+            </p>
+        </header>
+
+        <!-- Full Name -->
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Full Name *</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name"
+                    required />
+            </div>
+
+            <!-- E-mail -->
+            <div class="form-group">
+                <label id="email-label" for="email">Email *</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label id="number-label" for="number">Phone Number *</label>
+                <input type="tel" name="Phone Number" id="number" class="form-control"
+                    placeholder="Enter your Phone Number" />
+            </div>
+
+            <!-- Check Box -->
+            <div class="form-group">
+                <p>
+                    Do you agree to our * <a href="https://www.foodpanda.com/privacy-policy/" style="color: white">Terms & Conditions</a> ?
+                </p>
+
+                <label><input name="prefer" type="checkbox" class="input-checkbox" required/>Yes</label>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    
+                    <button type="submit" id="submit" class="submit-button" style="color: white;">
+                        <a href="index.html" style="text-decoration: none;">
+                            Submit  
+                        </a>
+                    </button>
+                
+                </div>
+        </form>
+    </div>
+
+
+</body>
+
+
+</html>
