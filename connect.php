@@ -1,6 +1,4 @@
-
-<?php
-    
+<?php  
     try{
         $db = new mysqli("localhost", "root", "", "forms");
     }
@@ -12,7 +10,6 @@
         $eMail = $_POST['eMail'];
         $phoneNumber = $_POST['phoneNumber'];
 
-
         $is_insert = $db->query("INSERT INTO `formdetails`(`fullName`, `eMail`, `phoneNumber`) VALUES ('$fullName', '$eMail', ' $phoneNumber')");
     
         if($is_insert == TRUE) {
@@ -20,5 +17,4 @@
             exit();
         }
     }
-    
 ?>
