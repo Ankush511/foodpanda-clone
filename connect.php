@@ -1,19 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Page</title>
+</head>
+<body>
+    <form action="connect.php" method="POST">
+    <a href="http://localhost/FOODPANDA/" style="text-decoration: none; ">
+    <button><h3>GoTo Homepage</h3></button>
+    </a>
+    </form>
 <?php
-    $fullName = $_POST['fullName'];
-    $eMail = $_POST['eMail'];
-    $comment = $_POST['comment'];
+    
+    try{
+        $db = new mysqli("localhost", "root", "", "information");
+    }
+    catch( Exception $exc){
+        echo $exc->getTraceAsString();
+    }
+    if(isset($_POST['fullName']) && isset($_POST['phoneNumber']) && isset($_POST['eMail']) && isset($_POST['age']) && isset($_POST['comment'])) {
+        $fullName = $_POST['fullName'];
+        $phoneNumber = $_POST['phoneNumber'];
+        $eMail = $_POST['eMail'];
+        $age = $_POST['age'];
+        $comment = $_POST['comment'];
 
-    //database connection
-    $conn = new mysqli('localhost','root','','contact');
-    if($conn->connect_error){
-        die('connection failed : '.$conn->connect_error);
+
+        $is_insert = $db->query("INSERT INTO `details`(`fullName`, `phoneNumber`, `eMail`, `age`, `comment`) VALUES ('$fullName','$phoneNumber','$eMail','$age','$comment')");
+    
+        if($is_insert == TRUE) {
+            echo "<h1>Thank You, your response has been submitted....</h1>";        
+            exit();
+        }
     }
-    else{
-        $stmt = $conn->prepare("INSERT INTO contactdetails(fullName,eMail,comment) values(?,?,?)");
-        $stmt->bind_param("ss",$fullName,$eMail,$comment);
-        $stmt->execute();
-        echo "Registered Successfully...";
-        $stmt->close();
-        $conn->close();
-    }
+    
 ?>
+
+</body>
+</html>

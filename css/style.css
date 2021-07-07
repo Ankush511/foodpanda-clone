@@ -86,15 +86,10 @@ a{
 
 
 .column {
-  /* background-color: white; */
   float: left;
   width: 33.33%;
   padding: 5px;
-  /* padding-right: 15px; */
-  /* padding-left: 15px; */
   padding-bottom: 15px;
-  /* margin-right: auto; */
-  /* margin-left: auto; */
   margin-bottom: auto;
 }
 
