@@ -307,7 +307,6 @@ a{
   align-items: baseline;
 }
 .restaurant__list__row_2 {
-  margin-top: 10px;
   display: flex;
   align-items: flex-start;
   flex-direction: row-reverse;
@@ -477,9 +476,6 @@ footer > ul > li {
     z-index: -3;
   }
   
-  
-  
-
   .food__menu__card__list {
     display: flex;
     flex-wrap: wrap;
